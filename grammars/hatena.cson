@@ -5,4 +5,94 @@
   'h'
 ]
 'patterns': [
+  {
+    'begin': '^(\\*{6})(\\s*)'
+    'end': '$'
+    'name': 'markup.heading.heading-6.hatena'
+    'captures':
+      '1':
+        'name': 'markup.heading.marker.hatena'
+      '2':
+        'name': 'markup.heading.space.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\*{5})(\\s*)'
+    'end': '$'
+    'name': 'markup.heading.heading-5.hatena'
+    'captures':
+      '1':
+        'name': 'markup.heading.marker.hatena'
+      '2':
+        'name': 'markup.heading.space.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\*{4})(\\s*)'
+    'end': '$'
+    'name': 'markup.heading.heading-4.hatena'
+    'captures':
+      '1':
+        'name': 'markup.heading.marker.hatena'
+      '2':
+        'name': 'markup.heading.space.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\*{3})(\\s*)'
+    'end': '$'
+    'name': 'markup.heading.heading-3.hatena'
+    'captures':
+      '1':
+        'name': 'markup.heading.marker.hatena'
+      '2':
+        'name': 'markup.heading.space.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\*{2})(\\s*)'
+    'end': '$'
+    'name': 'markup.heading.heading-2.hatena'
+    'captures':
+      '1':
+        'name': 'markup.heading.marker.hatena'
+      '2':
+        'name': 'markup.heading.space.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\*{1})(\\s*)'
+    'end': '$'
+    'name': 'markup.heading.heading-1.hatena'
+    'captures':
+      '1':
+        'name': 'markup.heading.marker.hatena'
+      '2':
+        'name': 'markup.heading.space.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
 ]
