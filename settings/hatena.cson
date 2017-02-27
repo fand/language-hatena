@@ -1,0 +1,5 @@
+'.source.hatena':
+  'editor':
+    'softWrap': true
+    'commentStart': '<!-- '
+    'commentEnd': ' -->'

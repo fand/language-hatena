@@ -1,0 +1,14 @@
+'.source.hatena':
+  'code':
+    'prefix': 'code'
+    'body': """
+      >|$1|
+      $2
+      ||<$0
+    """
+  'table':
+    'prefix': 'table'
+    'body': """
+      | *${1:Header One    } | *${2:Header Two    } |
+      | ${3:Item One       } | ${4:Item Two       } |$0
+    """

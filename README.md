@@ -1,3 +1,3 @@
-# PackageName language package
+# language-hatena
 
-A short description of your language package.
+Syntax highlighting and snippets for Hatena Notation (はてな記法).
