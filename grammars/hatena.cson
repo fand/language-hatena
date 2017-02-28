@@ -841,4 +841,25 @@
     'end': '--\\s*>'
     'name': 'comment.block.hatena'
   }
+  {
+    'begin': '^\\|'
+    'end': '(\\|)?\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'markup.changed.hatena'
+    'endCaptures':
+      '1':
+        'name': 'markup.changed.hatena'
+    'name': 'table.hatena'
+    'patterns': [
+      {
+        'match': '\\*([^\\|\\s]+)'
+        'name': 'markup.bold.hatena'
+      }
+      {
+        'match': '\\|'
+        'name': 'markup.changed.hatena'
+      }
+    ]
+  }
 ]
