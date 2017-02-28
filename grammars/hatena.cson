@@ -814,4 +814,10 @@
     'end': '\\1'
     'name': 'markup.raw.hatena'
   }
+  {
+    'match': '^([\\+\\-]+)'
+    'captures':
+      '1':
+        'name': 'markup.list.hatena'
+  }
 ]
