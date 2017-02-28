@@ -8,7 +8,7 @@
   {
     'begin': '^(\\*{6})(\\s*)'
     'end': '$'
-    'name': 'markup.heading.heading-6.hatena'
+    'name': 'markup.heading.heading-6.bold.hatena'
     'captures':
       '1':
         'name': 'markup.heading.marker.hatena'
@@ -23,7 +23,7 @@
   {
     'begin': '^(\\*{5})(\\s*)'
     'end': '$'
-    'name': 'markup.heading.heading-5.hatena'
+    'name': 'markup.heading.heading-5.bold.hatena'
     'captures':
       '1':
         'name': 'markup.heading.marker.hatena'
@@ -38,7 +38,7 @@
   {
     'begin': '^(\\*{4})(\\s*)'
     'end': '$'
-    'name': 'markup.heading.heading-4.hatena'
+    'name': 'markup.heading.heading-4.bold.hatena'
     'captures':
       '1':
         'name': 'markup.heading.marker.hatena'
@@ -53,7 +53,7 @@
   {
     'begin': '^(\\*{3})(\\s*)'
     'end': '$'
-    'name': 'markup.heading.heading-3.hatena'
+    'name': 'markup.heading.heading-3.bold.hatena'
     'captures':
       '1':
         'name': 'markup.heading.marker.hatena'
@@ -68,7 +68,7 @@
   {
     'begin': '^(\\*{2})(\\s*)'
     'end': '$'
-    'name': 'markup.heading.heading-2.hatena'
+    'name': 'markup.heading.heading-2.bold.hatena'
     'captures':
       '1':
         'name': 'markup.heading.marker.hatena'
@@ -83,7 +83,7 @@
   {
     'begin': '^(\\*{1})(\\s*)'
     'end': '$'
-    'name': 'markup.heading.heading-1.hatena'
+    'name': 'markup.heading.heading-1.bold.hatena'
     'captures':
       '1':
         'name': 'markup.heading.marker.hatena'
