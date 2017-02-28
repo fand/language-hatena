@@ -95,4 +95,723 @@
       }
     ]
   }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(coffee-?(script)?))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.coffee.hatena'
+    'contentName': 'source.embedded.coffee'
+    'patterns': [
+      {
+        'include': 'source.coffee'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(javascript|js))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.js.hatena'
+    'contentName': 'source.embedded.js'
+    'patterns': [
+      {
+        'include': 'source.js'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(typescript|ts))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.ts.hatena'
+    'contentName': 'source.embedded.ts'
+    'patterns': [
+      {
+        'include': 'source.ts'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(markdown|mdown|md))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.hatena'
+    'contentName': 'text.embedded.md'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(json))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.json.hatena'
+    'contentName': 'source.embedded.json'
+    'patterns': [
+      {
+        'include': 'source.json'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(css))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.css.hatena'
+    'contentName': 'source.embedded.css'
+    'patterns': [
+      {
+        'include': 'source.css'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(less))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.less.hatena'
+    'contentName': 'source.embedded.css.less'
+    'patterns': [
+      {
+        'include': 'source.css.less'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(xml))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.xml.hatena'
+    'contentName': 'text.embedded.xml'
+    'patterns': [
+      {
+        'include': 'text.xml'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(ruby|rb))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.ruby.hatena'
+    'contentName': 'source.embedded.ruby'
+    'patterns': [
+      {
+        'include': 'source.ruby'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(rust|rs))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.rust.hatena'
+    'contentName': 'source.embedded.rust'
+    'patterns': [
+      {
+        'include': 'source.rust'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(java))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.java.hatena'
+    'contentName': 'source.embedded.java'
+    'patterns': [
+      {
+        'include': 'source.java'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(scala|sbt))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.scala.hatena'
+    'contentName': 'source.embedded.scala'
+    'patterns': [
+      {
+        'include': 'source.scala'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(erlang))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.erlang.hatena'
+    'contentName': 'source.embedded.erlang'
+    'patterns': [
+      {
+        'include': 'source.erlang'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(go(lang)?))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.go.hatena'
+    'contentName': 'source.embedded.go'
+    'patterns': [
+      {
+        'include': 'source.go'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(cs(harp)?))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.cs.hatena'
+    'contentName': 'source.embedded.cs'
+    'patterns': [
+      {
+        'include': 'source.cs'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(php))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.php.hatena'
+    'contentName': 'source.embedded.php'
+    'patterns': [
+      {
+        'include': 'source.php'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\\\|\\s*(?i:(sh|bash|shell))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.shell.hatena'
+    'contentName': 'source.embedded.shell'
+    'patterns': [
+      {
+        'include': 'source.shell'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(py(thon)?))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.python.hatena'
+    'contentName': 'source.embedded.python'
+    'patterns': [
+      {
+        'include': 'source.python'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(pycon))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.python.console.hatena'
+    'contentName': 'source.embedded.python.console'
+    'patterns': [
+      {
+        'include': 'text.python.console'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(c))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.c.hatena'
+    'contentName': 'source.embedded.c'
+    'patterns': [
+      {
+        'include': 'source.c'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(c(pp|\\+\\+)))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.cpp.hatena'
+    'contentName': 'source.embedded.cpp'
+    'patterns': [
+      {
+        'include': 'source.cpp'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(objc|objective-c))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.objc.hatena'
+    'contentName': 'source.embedded.objc'
+    'patterns': [
+      {
+        'include': 'source.objc'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(adoc|asciidoc|asciidoctor|asc|))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.asciidoc.hatena'
+    'contentName': 'source.embedded.asciidoc'
+    'patterns': [
+      {
+        'include': 'source.asciidoc'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(swift))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.swift.hatena'
+    'contentName': 'source.embedded.swift'
+    'patterns': [
+      {
+        'include': 'source.swift'
+      }
+    ]
+  }
+
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(dockerfile|docker))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.dockerfile.hatena'
+    'contentName': 'source.embedded.dockerfile'
+    'patterns': [
+      {
+        'include': 'source.dockerfile'
+      }
+    ]
+  }
+
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(makefile|make))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.makefile.hatena'
+    'contentName': 'source.embedded.makefile'
+    'patterns': [
+      {
+        'include': 'source.makefile'
+      }
+    ]
+  }
+
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(perl))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.perl.hatena'
+    'contentName': 'source.embedded.perl'
+    'patterns': [
+      {
+        'include': 'source.perl'
+      }
+    ]
+  }
+
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(perl6))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.perl6.hatena'
+    'contentName': 'source.embedded.perl6'
+    'patterns': [
+      {
+        'include': 'source.perl6'
+      }
+    ]
+  }
+
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(toml))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.toml.hatena'
+    'contentName': 'source.embedded.toml'
+    'patterns': [
+      {
+        'include': 'source.toml'
+      }
+    ]
+  }
+
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(html))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.html.hatena'
+    'contentName': 'text.embedded.html.basic'
+    'patterns': [
+      {
+        'include': 'text.html.basic'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(ya?ml))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.yaml.hatena'
+    'contentName': 'source.embedded.yaml'
+    'patterns': [
+      {
+        'include': 'source.yaml'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(elixir))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.elixir.hatena'
+    'contentName': 'source.embedded.elixir'
+    'patterns': [
+      {
+        'include': 'source.elixir'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(diff|patch|rej))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.diff.hatena'
+    'contentName': 'source.embedded.diff'
+    'patterns': [
+      {
+        'include': 'source.diff'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(julia))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.julia.hatena'
+    'contentName': 'source.embedded.julia'
+    'patterns': [
+      {
+        'include': 'source.julia'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(r))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.r.hatena'
+    'contentName': 'source.embedded.r'
+    'patterns': [
+      {
+        'include': 'source.r'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(haskell))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.haskell.hatena'
+    'contentName': 'source.embedded.haskell'
+    'patterns': [
+      {
+        'include': 'source.haskell'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(elm))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.elm.hatena'
+    'contentName': 'source.embedded.elm'
+    'patterns': [
+      {
+        'include': 'source.elm'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(apib|apiblueprint))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.hatena'
+    'contentName': 'text.embedded.html.markdown.source.hatena.apib'
+    'patterns': [
+      {
+        'include': 'text.html.markdown.source.hatena.apib'
+      }
+    ]
+  }
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(mson))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.hatena'
+    'contentName': 'text.embedded.html.markdown.source.hatena.mson'
+    'patterns': [
+      {
+        'include': 'text.html.markdown.source.hatena.mson'
+      }
+    ]
+  },
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(sql))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.sql.hatena'
+    'contentName': 'source.embedded.sql'
+    'patterns': [
+      {
+        'include': 'source.sql'
+      }
+    ]
+  },
+  {
+    'begin': '^\\s*>\\|\\s*(?i:(clojure))\\|\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.clojure.hatena'
+    'contentName': 'source.embedded.clojure'
+    'patterns': [
+      {
+        'include': 'source.clojure'
+      }
+    ]
+  },
+  {
+    'begin': '^\\s*>\\|\\|.*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '^\\s*\\|\\|<\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.raw.hatena'
+  }
+  {
+    'begin': '(`+)(?!$)'
+    'end': '\\1'
+    'name': 'markup.raw.hatena'
+  }
 ]
