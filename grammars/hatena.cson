@@ -810,9 +810,9 @@
     'name': 'markup.raw.hatena'
   }
   {
-    'begin': '(`+)(?!$)'
+    'begin': '(\\`+)(?!$)'
     'end': '\\1'
-    'name': 'markup.raw.hatena'
+    'name': 'markup.raw.inline.hatena'
   }
   {
     'match': '^([\\+\\-]+)'
