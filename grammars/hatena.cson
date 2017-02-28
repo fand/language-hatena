@@ -820,4 +820,17 @@
       '1':
         'name': 'markup.list.hatena'
   }
+  {
+    'begin': '^\\>(.*)\\>\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'keyword.hatena'
+    'end': '^\\<\\<\\s*$'
+    'name': 'comment.quote.hatena'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
 ]
