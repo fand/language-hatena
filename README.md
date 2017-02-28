@@ -1,8 +1,8 @@
 # language-hatena
 
-Syntax highlighting and snippets for Hatena Notation (はてな記法).
+Syntax highlighting and snippets for Hatena Syntax (はてな記法).
 
-![example](https://cloud.githubusercontent.com/assets/1403842/23390742/60849f32-fdb3-11e6-8d60-e59846a3e34b.png)
+![example](https://cloud.githubusercontent.com/assets/1403842/23390963/93f9712a-fdb4-11e6-82c3-67798c57e2f6.png)
 
 ## Supporting features
 - headings
