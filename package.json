@@ -1,6 +1,6 @@
 {
   "name": "language-hatena",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Syntax highlighting and snippets for Hatena Syntax (はてな記法).",
   "keywords": [
     "language",
