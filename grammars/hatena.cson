@@ -832,6 +832,10 @@
     ]
   },
   {
+    'match': '^=====?$'
+    'name': 'markup.raw.inline.readmore.hatena'
+  }
+  {
     'match': '^([\\+\\-]+)'
     'captures':
       '1':
