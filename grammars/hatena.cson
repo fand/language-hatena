@@ -842,6 +842,21 @@
     'name': 'comment.block.hatena'
   }
   {
+    'begin': '<ins>'
+    'end': '<\\/ins>'
+    'name': 'markup.inserted.hatena'
+  }
+  {
+    'begin': '<del>'
+    'end': '<\\/del>'
+    'name': 'markup.deleted.hatena'
+  }
+  {
+    'begin': '<blockquote[^>]*>'
+    'end': '<\\/blockquote>'
+    'name': 'markup.quote.hatena'
+  }
+  {
     'begin': '^\\|'
     'end': '(\\|)?\\s*$'
     'beginCaptures':
