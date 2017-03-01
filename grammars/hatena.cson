@@ -906,4 +906,8 @@
     'match': '\\bid\\:[a-zA-Z0-9]+\\b'
     'name': 'keyword.id.hatena'
   }
+  {
+    'match': '\\[\\[[^\\]]*\\]\\]'
+    'name': 'keyword.hatena'
+  }
 ]
