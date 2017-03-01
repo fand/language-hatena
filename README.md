@@ -11,8 +11,7 @@ Syntax highlighting and snippets for Hatena Syntax (はてな記法).
 - super-pre
 - comment
 - quote
-
-## Upcoming features
 - link
 - id call
-- ...and more!
+- footnote
+- read more
