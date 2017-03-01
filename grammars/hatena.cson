@@ -815,6 +815,23 @@
     'name': 'markup.raw.inline.hatena'
   }
   {
+    'begin': '\\[tex\\:'
+    'beginCaptures':
+      '0':
+        'name': 'support.hatena'
+    'end': '\\]'
+    'endCaptures':
+      '0':
+        'name': 'support.hatena'
+    'name': 'markup.code.latex.hatena'
+    'contentName': 'source.embedded.latex'
+    'patterns': [
+      {
+        'include': 'source.latex'
+      }
+    ]
+  },
+  {
     'match': '^([\\+\\-]+)'
     'captures':
       '1':
