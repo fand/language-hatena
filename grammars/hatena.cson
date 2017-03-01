@@ -862,4 +862,33 @@
       }
     ]
   }
+  {
+    'match': '(?:https?\\:)\\/\\/?\\S+'
+    'name': 'string.other.link.hatena'
+  }
+  {
+    'match': '\\[((?:https?\\:)\\/\\/?.*)(\\:title|\\:image|\\:barcode)?\\]'
+    'captures':
+      '0':
+        'name': 'url.hatena'
+      '1':
+        'name': 'string.hatena'
+    'name': 'string.other.link.hatena'
+  }
+  {
+    'match': '(?i:\\[f\\:[^\\]]*\\])'
+    'name': 'string.fotolife.hatena'
+  }
+  {
+    'match': '(?i:a|b|d|f|g|h|graph|k|keyword|asin|isbn|rakuten|jan|ean|mailto|niconico|google|map|amazon|wikipedia)\\:[^\\]\\s]+'
+    'name': 'string.hatena'
+  }
+  {
+    'match': '\\[(?i:a|b|d|f|g|h|graph|k|keyword|asin|isbn|rakuten|jan|ean|mailto|niconico|google|map|amazon|wikipedia)\\:[^\\]]+\\]'
+    'name': 'string.hatena'
+  }
+  {
+    'match': '\\bid\\:[a-zA-Z0-9]+\\b'
+    'name': 'keyword.id.hatena'
+  }
 ]
