@@ -836,6 +836,10 @@
     'name': 'markup.raw.inline.readmore.hatena'
   }
   {
+    'match': '\\(\\([^\\)]*\\)\\)'
+    'name': 'comment.footnote.hatena'
+  }
+  {
     'match': '^([\\+\\-]+)'
     'captures':
       '1':
