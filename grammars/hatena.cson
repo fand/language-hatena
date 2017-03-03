@@ -539,7 +539,6 @@
       }
     ]
   }
-
   {
     'begin': '^\\s*>\\|\\s*(?i:(perl))\\|\\s*$'
     'beginCaptures':
@@ -557,7 +556,6 @@
       }
     ]
   }
-
   {
     'begin': '^\\s*>\\|\\s*(?i:(perl6))\\|\\s*$'
     'beginCaptures':
@@ -846,19 +844,6 @@
         'name': 'markup.list.hatena'
   }
   {
-    'begin': '^\\>(.*)\\>\\s*$'
-    'beginCaptures':
-      '0':
-        'name': 'keyword.hatena'
-    'end': '^\\<\\<\\s*$'
-    'name': 'comment.quote.hatena'
-    'patterns': [
-      {
-        'include': '$self'
-      }
-    ]
-  }
-  {
     'begin': '<!--'
     'captures':
       '0':
@@ -872,6 +857,16 @@
     'name': 'markup.inserted.hatena'
   }
   {
+    'begin': '<em>'
+    'end': '<\\/em>'
+    'name': 'markup.keyword.emphasis.hatena'
+  }
+  {
+    'begin': '<strong>'
+    'end': '<\\/strong>'
+    'name': 'markup.keyword.strong.hatena'
+  }
+  {
     'begin': '<del>'
     'end': '<\\/del>'
     'name': 'markup.deleted.hatena'
@@ -879,7 +874,24 @@
   {
     'begin': '<blockquote[^>]*>'
     'end': '<\\/blockquote>'
-    'name': 'markup.quote.hatena'
+    'name': 'markup.keyword.hatena'
+    'contentName': 'comment.quote.hatena'
+  }
+  {
+    'begin': '^\\s*\\>(.*)\\>\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'markup.keyword.hatena'
+    'end': '^\\s*\\<\\<\\s*$'
+    'name': 'markup.keyword.hatena'
+    'contentName': 'comment.quote.hatena'
+  }
+  {
+    'match': '<img\\s*(src=".*"|alt=".*"|title=".*")*\\/?>'
+    'captures':
+      '0':
+        'name': 'url.hatena'
+    'name': 'keyword.link.hatena'
   }
   {
     'begin': '^\\|'
