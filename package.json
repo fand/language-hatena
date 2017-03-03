@@ -1,6 +1,6 @@
 {
   "name": "language-hatena",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Syntax highlighting and snippets for Hatena Syntax (はてな記法).",
   "main": "./lib/index.coffee",
   "activationCommands": {
