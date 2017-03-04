@@ -808,8 +808,8 @@
     'name': 'markup.raw.hatena'
   }
   {
-    'begin': '(\\`+)(?!$)'
-    'end': '\\1'
+    'begin': '<code>'
+    'end': '<\\/code>'
     'name': 'markup.raw.inline.hatena'
   }
   {
@@ -838,10 +838,8 @@
     'name': 'comment.footnote.hatena'
   }
   {
-    'match': '^([\\+\\-]+)'
-    'captures':
-      '1':
-        'name': 'markup.list.hatena'
+    'match': '^[\\+\\-]+'
+    'name': 'markup.list.hatena'
   }
   {
     'begin': '<!--'
@@ -919,7 +917,7 @@
     'name': 'keyword.link.hatena'
   }
   {
-    'match': '\\[((?:https?\\:)\\/\\/?.*)(\\:title|\\:image|\\:barcode)?\\]'
+    'match': '\\[((?:https?\\:)\\/\\/?.*?)(\\:title|\\:image|\\:barcode)?\\]'
     'captures':
       '0':
         'name': 'url.hatena'
@@ -936,7 +934,7 @@
     'name': 'keyword.link.hatena'
   }
   {
-    'match': '\\[(?i:a|b|d|f|g|h|graph|k|keyword|asin|isbn|rakuten|jan|ean|mailto|niconico|google|map|amazon|wikipedia)\\:[^\\]]+\\]'
+    'match': '\\[(?i:a|b|d|f|g|h|graph|k|keyword|asin|isbn|rakuten|jan|ean|mailto|niconico|google|map|amazon|wikipedia)\\:[^\\]]+?\\]'
     'name': 'keyword.link.hatena'
   }
   {
