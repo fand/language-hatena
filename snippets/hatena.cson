@@ -12,3 +12,23 @@
       | *${1:Header One    } | *${2:Header Two    } |
       | ${3:Item One       } | ${4:Item Two       } |$0
     """
+  'inlineCode':
+    'prefix': 'inlineCode'
+    'body': """
+      <code>$1</code>$0
+    """
+  'image':
+    'prefix': 'image'
+    'body': """
+      [$1:image]$0
+    """
+  'link':
+    'prefix': 'link'
+    'body': """
+      [$1]$0
+    """
+  'comment':
+    'prefix': 'comment'
+    'body': """
+      <!-- $1 -->$0
+    """
